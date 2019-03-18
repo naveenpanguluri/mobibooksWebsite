@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Mobibooks Flash Marketing</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome JS -->
+  <!-- <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css"> -->
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="logo">
+          <img src="images/logo_blue.png" class="img-fluid" />
+        </div>
+        <p class="text-center b_clr">Accounting and Inventory Management made simple...</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          Thank You for your interest in mobibooks.
+        </p>
+        <p>
+          mobibooks is a cloud based accounting and inventory management solution with web, desktop and mobile components. We specialise in automotive and hospitality segments.
+        </p>
+        <p>
+          Please provide us your contact information to schedule an appointment.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <form method="post">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="Email">Email Address:</label>
+            <input type="email" class="form-control" id="Email" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone:</label>
+            <input type="number" class="form-control" id="Phone" placeholder="Phone">
+          </div>
+          <button type="submit" id="onSubmitForm" class="btn btn-primary float-right bgb_clr">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          Please visit out website <a href="https://www.mobibooks.in/" class="b_clr anchor" target="_blank">www.mobibooks.in</a> for product information.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          If you are not interested in receiving further messages please <a href="#" class="b_clr anchor">click here</a> to unsubscribe.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="bgb_clr p-4 mt-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 col-lg-4">
+          <span class="py-2"><i class="fa fa-envelope mr-2"></i>sales@mobibooks.com</span>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <span class="py-2"><i class="fa fa-phone mr-2"></i>+91 9346888414</span>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a href="https://goo.gl/maps/b2En84DwNJo" target="_blank" class="location w_clr py-2"><i class="fa fa-map-marker mr-2"></i>mobibooks address</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#onSubmitForm").click(function(event) {
+        event.preventDefault();
+
+        var userObj = {
+          "name": $("#Name").val(),
+          "email": $('#Email').val(),
+          "phone": $('#Phone').val()
+        }
+        console.log("obj......", userObj);
+
+        $.ajax({
+          url: 'https://www.mobibooks.in/flmk/api/customer/',
+          type: 'POST',
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          data: userObj,
+          success: function(data, textStatus, jQxhr) {
+            console.log("success data", data + '' + textStatus);
+            // $('#response pre').html(JSON.stringify(data));
+          },
+          error: function(jqXhr, textStatus, errorThrown) {
+            console.log(errorThrown);
+          }
+        });
+
+
+      });
+    });
+  </script>
+
+</body>
+
+</html>

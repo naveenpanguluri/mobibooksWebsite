@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(61, 61, 61);
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.logo {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.w_clr {
+  color: #fff;
+}
+
+.b_clr {
+  color: rgb(4, 169, 206);
+}
+
+.bgb_clr {
+  background-color: rgb(4, 169, 206);
+}
+
+.anchor:hover {
+  text-decoration: none !important;
+  color: rgb(4, 169, 206);
+}
+
+#onSubmitForm:hover {
+  background-color: rgb(4, 169, 206);
+}
+
+.location:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 420px) {
+  .logo {
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+  }
+}

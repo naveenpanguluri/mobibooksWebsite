@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>mobibooks - Cloud Accounting & Inventory Management Solution</title>
+
+  <!-- Favicons -->
+  <link href="images/fav.png" rel="icon">
+  <link href="images/fav.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="overlay hidden-sm hidden-md hidden-lg hidden-"></div>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 clearfix pt-10 pt-6">
+          <a href="index.html" class="clearfix pull-left"><img src="images/fav.png" class="img-responsive pull-left mobi-logo" />
+          <span class="pull-left logo-name logo-font anchor">mobibooks</span></a>
+          <i class="fa fa-bars pull-right xs-icon hidden-sm hidden-md hidden-lg hidden-" id="sidebarCollapse"></i>
+        </div>
+        <div class="col-md-9 col-lg-9 clearfix hidden-xs">
+          <ul class="list-unstyled list-inline pull-right m-0 ptb-9 head-padd">
+            <li class="plr-15">
+              <a href="index.html" class="anchor f-16">HOME</a>
+            </li>
+            <li class="plr-15">
+              <div class="dropdown">
+                <a href="#" class="anchor f-16">SOLUTIONS</a>
+                <!-- <i class="fa fa-caret-up sol-icon"></i> -->
+                <div class="dropdown-content">
+                  <a href="mobi-features.html" class="f-16">MOBIBOOKS FEATURES</a>
+                  <a href="mobi-integrations.html" class="f-16">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li class="plr-15">
+              <a href="https://www.mobibooks.in:8443/support/" class="anchor f-16">SUPPORT</a>
+            </li>
+            <li class="plr-15">
+              <a href="GSTUtilities.html" class="anchor f-16">GST UTILITIES</a>
+            </li>
+            <li class="plr-15">
+              <a href="contact.html" class="anchor f-16">CONTACT</a>
+            </li>
+            <li>
+              <!-- <a href="https://api.mobibooks.in/#!/login" target="_blank" class="anchor">login</a> -->
+              <a type="button" href="https://api.mobibooks.in/#!/login" target="_blank" class="btn btn-clr1 white-clr btn-sm signup">login</a>
+
+            </li>
+            <!-- <li>
+              <a type="button" href="https://api.mobibooks.in/#!/signup" target="_blank" class="btn btn-clr white-clr btn-sm signup">Signup for free</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- <section class="sub-header mt-55 hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled list-inline pull-left m-0 f-16">
+            <li class="">
+              <a href="index.html" class="anchor">HOME</a>
+            </li>
+            <li class="">
+              <div class="dropdown">
+                <a href="#" class="anchor">SOLUTIONS</a>
+                <div class="dropdown-content">
+                  <a href="mobi-features.html">MOBIBOOKS FEATURES</a>
+                  <a href="mobi-integrations.html">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="http://abimanyu.in" target="_blank" class="anchor">SUPPORT</a>
+            </li>
+            <li class="">
+              <a href="GSTUtilities.html" class="anchor">GST UTILITIES</a>
+            </li>
+            <li>
+              <a href="contact.html" class="anchor">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- xs screen menu code -->
+  <nav id="sidebar" class="hidden-sm hidden-md hidden-lg hidden-">
+    <div id="dismiss">
+      <i class="fa fa-close"></i>
+    </div>
+
+    <div class="sidebar-header">
+      <h3>MENU</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="index.html">HOME</a>
+      </li>
+      <li class="">
+        <a data-toggle="collapse" href="#collapse1">SOLUTIONS</a>
+        <div id="collapse1" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item coll-sub">
+              <a href="mobi-features.html">MOBIBOOKS FEATURES</a>
+            </li>
+            <li class="list-group-item coll-sub">
+              <a href="mobi-integrations.html">MOBI BRIDGE INTEGRATIONS</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.mobibooks.in:8443/support/">SUPPORT</a>
+      </li>
+      <li class="">
+        <a href="GSTUtilities.html" class="anchor">GST UTILITIES</a>
+      </li>
+      <li>
+        <a href="contact.html">CONTACT</a>
+      </li>
+      <li>
+        <a href="https://api.mobibooks.in/#!/login" target="_blank">LOGIN</a>
+      </li>
+      <!-- <li>
+        <a href="https://api.mobibooks.in/#!/signup" target="_blank">SIGNUP FOR FREE</a>
+      </li> -->
+    </ul>
+
+  </nav>
+
+
+  <section class="ptb-50 mt-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- <h3 class="text-center head-txt mtb-20">GST Utilities</h3> -->
+          <h3 class="text-center head-txt mtb-20">Convert your <span class="fw-400"> GSTR ( json or zip )</span> files to <span class="fw-400">Excel</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-20">
+          <div class="min-h1">
+            <p class="text-center">Get your downloaded GSTR (json or zip) files converted to Excel. Shortly after uploading the file you will receive an email with excel attachment. Please check your spam folder, if you do not receive email.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <form name="gstformupload" class="gstformupload gst-form" id="gstformupload">
+            <div class="form-group text-left terms_div">
+              <label class="fw-100 ml-10">I agree to the <a href="" data-toggle="modal" data-target="#terms_conditions" class="fw-400">terms & conditions</a></label>
+              <input type="checkbox" class="checkbox1 pull-left" id="agree" name="agree">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control inpt-box" id="usermobile" placeholder="Mobile Number" name="usermobile" maxlength="10">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control inpt-box" id="useremail" placeholder="Email Address" name="useremail">
+            </div>
+            <div class="form-group">
+              <input type="file" id="userfile" class="uploadfile" name="userfile">
+              <span class="textSize">upload .zip file</span>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 text-left"><a href="mailto:support@mobibooks.in" class="btn btn-sm btn-info pull-left">Feedback</a></div>
+              <div class="col-sm-6 text-right"><input type="submit" class="btn btn-sm btn-info " id="submitbtn" value="Submit"></div>
+            </div>
+          </form>
+          <div id="terms_conditions" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                  <p>We make our best efforts to accurately convert your data. We assume no responsibility for the accuracy of any information that has been converted.</p>
+                  <strong>All decisions made with these data are done entirely at the user's risk.</strong>
+                  <p>We disclaim all liability for loss or damage, including but not limited to loss or damage arising from interruption of service, errors or inaccuracies in data, viruses, system incompatibilities or other harmful components. We makes no
+                    representation that the results obtained from use of its data. The terms "loss" and "damage" as used herein shall include, but not be limited to loss of profits, or increase in input costs, taxes, and all other direct, indirect, incidental,
+                    special or consequential damages arising out of use of this website or its services.</p>
+                  <strong>Protection of your personal information</strong>
+                  <p>We are committed to protecting your privacy and personal information. We collect certain personal information (name, email address, telephone number, etc.) in order to provide you with a secure, smooth, efficient, and customized experience.
+                    Your personal information will never be shown, sold, shared, or revealed in any way to any third party. Moreover, upon your request, we will immediately delete all personal information from our database </p>
+                  <strong>Agreement to receiving emails</strong>
+                  <p>Email communications are integral to our service and, by agreeing to these terms of use, you agree to our sending you emails, as we see fit. Please note: you can unsubscribe at any time and this email stream will stop.</p>
+                  <strong>How we use Cookies</strong>
+                  <p>We use cookies to remember what parts of the website you have navigated to and to improve your browsing experience. Cookies are small text files which a website may put on your computer when you first visit a site or page. The cookie
+                    will help the website recognize your device the next time you visit. Cookies serve several functions. For example, they can help us to remember your username, mobile and email ID. Certain cookies contain the recent folder from where
+                    you have uploaded the file to enable you to quickly select the files from the same folder next time. </p>
+                    <h4>SMS ZONE - Terms and conditions</h4>
+                    <strong>Privacy Statement</strong>
+                    <p>SMSZONE understands the importance of your privacy. At SMSZONE we are committed to protecting the privacy of our users. If and when SMSZONE collects personal identifying information, we maintain the confidentiality, security and integrity of that personal information obtained from our users. We do not share nor disclose personal information to any party beyond the SMSZONE network. For your own protection, please review the following terms and conditions before joining SMSZONE. We want you to enjoy SMSZONE to the fullest, but we also want you to stay informed. Through subscribing to SMSZONE, you are agreeing to our terms and conditions.</p>
+                    <strong>Terms and conditions of use</strong>
+                    <p>Your use of SMSZONE.in, the SMSZONE Mobile means that you agree to the terms and conditions outlined below. If you do not agree to these terms and conditions, do not continue to use any of the SMSZONE properties. We reserve the right to change, modify and or remove portions of these terms at any time. If you choose to continue your use of this site after we have posted changes to the terms, it means you have accepted those terms. SMSZONE will not share your email address with anyone else without your permission.</p>
+                    <strong>What kind of information does SMSZONE request and why is it necessary?</strong>
+                    <p>All identifying information SMSZONE requests from the user is strictly kept confidential within the SMSZONE network. Personally identifying information SMSZONE asks for includes: your name, gender, birth date, zip code and e-mail address. When you register as a member of SMSZONE, we ask for your honest responses to this information so that we can serve you more efficiently and effectively. SMSZONE will not sell, rent nor disclose any of this personal information without your prior notification or consent. Further information we may ask for is strictly optional and thereby available publicly to other SMSZONE subscribers. Such optional information may include but is not limited to your hobbies and personal interests. This information is entered into your personal profile page and may be accessed by other SMSZONE members. Both your personal and optional information will help customize and enrich your SMSZONE experience by allowing us to send Group and Channel information to you based upon your entries. Our intention in requesting your personal information is so that we may provide you with opportunities by specifically directing Groups, Channels, and advertisements that reflect your interests. While you are receiving information directly to your account, advertisers never see or have access to your individual account information. If we are required by law, or feel a user will benefit, we may send you e-mail notices about products, companies and events. Always keep in mind, however, that any information you disclose on the Internet through e-mail, message boards or chat rooms, runs the risk of being collected by a third party, resulting in unsolicited e-mail messages or advertisements.</p>
+                    <strong>What exactly are cookies?</strong>
+                    <p>So that SMSZONE can provide you with thorough and personalized service, we use cookies to keep and occasionally track information about you. A cookie is a small piece of data that is sent to your browser from a Web server and stored on your computer's hard drive. The use of cookies is an industry standard, you'll find them at most every major website. SMSZONE sometimes uses cookies to track info for our users' convenience and to understand our customers better. The cookies that are gathered by SMSZONE are only used within the SMSZONE network; at no time will we share that information with another service. Please note that you could be directed to another site while using SMSZONE. Links to other sites from ours are outside our network. These services may send their own cookies to users and otherwise collect data or solicit personal information.</p>
+                    <strong>A word on content</strong>
+                    <p>Through your SMSZONE account, we provide you with unfiltered access to other people's content. We cannot guarantee the quality, nor do we wish to control the content with which you will have contact. Naturally, not all content will agree with and appeal to each individual user. Another user's content may be offensive, harmful or inaccurate; please use discretion in understanding that user information. Content from an individual member's page or site does not reflect the opinion and intentions of SMSZONE. SMSZONE maintains the right to suspend membership or terminate an account that is considered to be the cause of harm or interference with our rights or property, SMSZONE members and users, or any individual that may suffer from such inappropriate activities. Furthermore, we may disclose user information when required to do so by law.</p>
+                    <strong>How does an IP work?</strong>
+                    <p>An IP address is a number that is automatically assigned to your computer when you surf the Web. Web servers are able to identify your computer by its IP address. SMSZONE does not link IP addresses to anything personally identifiable as an individual. This means that the users session will be kept on record, but the users personally identifying information (PII) remains anonymous. Personally Identifying Information, such as your name, address, phone number, date of birth, medical records and financial reports are not gathered through an IP address.</p>
+                    <strong>"SPAM"</strong>
+                    <p>Distributing or taking any action with unsolicited commercial messages (spam) through another web site or account is a strict offense. SMSZONE may use anti spam techniques, without prior consent, to stop your messages and prevent them from delivery.</p>
+                    <strong>Does SMSZONE protect my privacy?</strong>
+                    <p>Your SMSZONE account is password-protected, meaning only you have access to your account-related information. If you refrain from sharing your password with others, you can help us to continue this security and confidentiality. Remember to log out of your SMSZONE account when you are finished. By doing so, you protect your information from being re-opened by another person if you are using a shared or public computer. Please note that neither SMSZONE nor any other Internet service can promise complete privacy. The Internet is not yet 100% secure, therefore it is recommended that you take care with the information you choose to provide on any online service.</p>
+                    <strong>Appropriate online conduct and content</strong>
+                    <p>With the exception of private text messages and e-mail, anytime you publish through SMSZONE, upload to and/or distribute information through our service, you are granting SMSZONE the right to copy, edit, delete, and distribute such works. As the user you retain the rights you already hold in pre-owned aspects of the work. Because this is a public service, communications outside of our network are not endorsed by SMSZONE. Hyperlinks to other Web sites may become available through SMSZONE. Such links are provided as interest to the user; SMSZONE does not hold any rights to these links, nor do we have any association with their endorsers. Personally identifying information may be gathered from these links. We are not responsible for, nor do we control the origin and conduct of these links. SMSZONE is not responsible, nor liable, for your actions while using our site. As the user, you are required to accept total responsibility for your behavior and conduct while using SMSZONE. If you do not agree to follow SMSZONE's Terms and Conditions, please refrain from entering our site. Common courtesy and mutual respect are necessary when communicating with other members of SMSZONE. Because SMSZONE hopes to promote a safe and fun atmosphere for our users, please read over the following list of what actions you agree to refrain from while using SMSZONE and its properties:</p>
+                    <ul>
+                      <li>Sending, sharing, promoting, or advertising harmful or illegal material.</li>
+                      <li>Encouraging or manipulating the dispersal of content in the form of: a threat, harassment, ethnic slander, sexual misconduct, or inappropriate and unwanted behavior towards another member.</li>
+                      <li>Acting in a manner that is potentially abusive or insensitive to other SMSZONE members. This includes: harassing, threatening, embarrassing, or intentionally harming another user.</li>
+                      <li>Attempting to gain account information, private profiles or a password from another SMSZONE member. Obtaining email addresses, cell phone numbers or any other private member information without prior consent is strictly forbidden.</li>
+                      <li>Assuming the identity of any individual other than yourself. You may not impersonate another member, or a SMSZONE staff member.</li>
+                      <li>Posting or exchanging defamatory, abusive, slanderous, harmful, promotional or unsolicited material. SMSZONE holds the right to eliminate and remove any content that may violate these terms.</li>
+                      <li>Stalking of other members and SMSZONE staff is a serious act and in some instances it is a crime. This includes repetitive calling, e-mailing, or initiating non-consensual contact of any kind. SMSZONE reserves the right to inform authorities of these violations if we feel it necessary.</li>
+                      <li>Copying or replicating the intellectual work of any SMSZONE member, or any works you may find on this site. We respect, and wish to protect the rights and property of our users; we expect you to do the same.</li>
+                    </ul>
+                    <strong>Copyright rules</strong>
+                    <p>Everything contained within this site is owned by SMSZONE or used with permission. If you wish to retransmit, use or copy any information for this site, you must have our explicit written permission. Ownership or permission must be gained if you wish to change or advertise anything from SMSZONE. Violators of this policy will be dealt with in a serious and legal manner.</p>
+                    <strong>Liability and warning</strong>
+                    <p>As an individual using this site, you are doing so at your own risk. Here at SMSZONE, we uphold our terms of use seriously and follow all the rules and regulation as laid by all relevant government authorities(TRAI etc.). Our reasoning behind such claims is that we are not liable for any damages that may result from your use of the site.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <!--<button type="button" class="btn btn-primary" id="accept_condition" data-dismiss="modal"> Accept Terms</button> -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="white-clr">
+    <div class="container ptb-50">
+      <div class="row m-0">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h3 class="foot-logo logo-font">mobibooks</h3>
+          <p class="foot-text clr1">Secure cloud based accounting and inventory management solution. Integrated desktop and mobile applications to support field operations. Server not required.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">USEFUL LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="index.html" class="anchor clr1">Home</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="solutions.html" class="anchor clr1">Solutions</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="https://www.mobibooks.in:8443/support/" class="anchor clr1">Support</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="GSTUtilities.html" class="anchor clr1">GST Utilities</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="contact.html" class="anchor clr1">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">CONTACT US</h4>
+          <p class="foot-text">
+            Kanakadurga & Viswa Sai Mandir Rd,<br> Bhavani Nagar, Banjara Hills,<br> Hyderabad - 500034,<br>
+            <strong>Phone:</strong> +91 7093644659<br>
+            <strong>Email:</strong> contact@mobigesture.com<br>
+          </p>
+          <div class="social-links ptb-15">
+            <a href="https://twitter.com/mobigesture_m" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Mobigesture/?ref=br_rs" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+          </div>
+        </div>
+        <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-newsletter">
+          <h4 class="m-0 ptb-22">OUR NEWSLETTER</h4>
+          <p class="foot-text">Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <form action="" method="post" class="ptb-15">
+            <input type="email" name="email"><input type="submit" value="Subscribe" class="bg-blue">
+          </form>
+        </div> -->
+      </div>
+    </div>
+    <div class="copyrights ptb-15">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          Copyright © 2018 <strong>mobibooks</strong> All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.10/sweetalert2.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // scrollable data
+      var nice = $("html").niceScroll({
+        cursorcolor: "#0aa9ce",
+      }); // The document page (body)
+
+      // code for mobile screen menu
+
+      $('#dismiss, .overlay').on('click', function() {
+        $('#sidebar').removeClass('active');
+        $('.overlay').fadeOut();
+      });
+
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').addClass('active');
+        $('.overlay').fadeIn();
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+    });
+  </script>
+
+  <!-- <script type="text/javascript">
+    // script for sub header
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 100) {
+        $(".sub-header").addClass("activesubheader");
+      } else {
+        $(".sub-header").removeClass("activesubheader");
+      }
+    });
+
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 120) {
+        $("header").addClass("activeheader");
+        // $(".head-padd").addClass("ptb-15");
+      } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("header").removeClass("activeheader");
+        // $(".head-padd").removeClass("ptb-15");
+      }
+    });
+  </script> -->
+
+  <!-- code for GSTUtilities -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#gstformupload").submit(function(e) {
+        e.preventDefault();
+      }).validate({
+        rules: {
+          agree: {
+            required: true
+          },
+          usermobile: {
+            required: true,
+            maxlength: 10,
+            mobileno: true
+          },
+          useremail: {
+            required: true,
+            validate_email: true
+          },
+          userfile: {
+            required: true
+          }
+        },
+        messages: {
+          agree: {
+            required: ""
+          },
+          usermobile: {
+            required: "Enter mobile number"
+          },
+          useremail: {
+            required: "Enter valid email"
+          },
+          userfile: {
+            required: "Upload file required"
+          }
+        },
+        highlight: function(element) {
+          if ($(element).attr('name') === "agree") {
+            $(element).closest('.help-block').remove();
+            $(element).closest('.form-group').addClass('errorborder');
+          }
+          $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+          if ($(element).attr('name') === "agree") {
+            $(element).closest('.help-block').remove();
+            $(element).closest('.form-group').removeClass('errorborder');
+          }
+          $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        submitHandler: function(form) {
+          var file = $('#userfile')[0].files[0];
+          var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function() {
+            $(".loadingfrom_bg").removeClass('hide');
+            var fileOrginalData = reader.result;
+            var data_index = fileOrginalData.indexOf('base64') + 7;
+            var filedata = fileOrginalData.slice(data_index, fileOrginalData.length);
+            $.when(ajaxHandler('/gst/api/upload', {
+              "name": file.name,
+              "data": filedata
+            }, false)).done(function(data, textStatus, jqXHR) {
+              $(".loadingfrom_bg").addClass('hide');
+              if (data.hasOwnProperty("error")) {
+                swal(
+                  'Oops! Something went wrong',
+                  data.error.message + "(" + data.error.code + ")",
+                  'question'
+                );
+              } else {
+                $(".loadingfrom_bg").removeClass('hide');
+                var sentuseremail = $("#useremail").val();
+                $.when(ajaxHandler('/gst/api/task/', {
+                  "mobile": $("#usermobile").val(),
+                  "email": sentuseremail,
+                  "input_url": data.url
+                }, false)).done(function(taskres, textStatus, jqXHR) {
+                  $(".loadingfrom_bg").addClass('hide');
+                  if (taskres.hasOwnProperty("error")) {
+                    swal(
+                      'Oops! Something went wrong',
+                      taskres.error.message + "(" + taskres.error.code + ")",
+                      'question'
+                    );
+                  } else {
+                    $('#userfile').val('');
+                    swal(
+                      '',
+                      'File processed, email will be sent to ' + sentuseremail + '.',
+                      'success'
+                    );
+                    // $("#gstformupload")[0].reset();
+                  }
+                }).fail(function(xhr, textStatus, errorThrown) {
+                  $(".loadingfrom_bg").addClass('hide');
+                  swal(
+                    'Oops! Something went wrong',
+                    errorThrown,
+                    'question'
+                  );
+                });
+              }
+            }).fail(function(xhr, textStatus, errorThrown) {
+              $(".loadingfrom_bg").addClass('hide');
+              swal(
+                'Oops! Something went wrong',
+                errorThrown,
+                'question'
+              );
+            });
+          };
+          reader.onerror = function(error) {
+            swal(
+              'Oops! Something went wrong',
+              'File not uploaded, please try again.',
+              'error'
+            );
+          };
+          return false;
+        }
+      });
+      $('#userfile').on('change', function() { // fires every time this field changes
+        $(this).valid(); // force a validation test on this field
+      });
+      $.validator.addMethod("mobileno", function(phone_number, element) {
+        phone_number = phone_number.replace(/\s+/g, "");
+        return this.optional(element) || phone_number.length > 9 &&
+          phone_number.match(/^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/);
+      }, "Please specify a valid mobile number");
+      $.validator.addMethod("validate_email", function(value, element) {
+        if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(value)) {
+          return true;
+        } else {
+          return false;
+        }
+      }, "Please enter a valid Email.");
+    });
+
+    function ajaxHandler(url, data, asyncType) {
+      $.support.cors = true;
+      return $.ajax({
+        beforeSend: function(xhrObj) {
+          xhrObj.setRequestHeader("Content-Type", "application/json");
+          xhrObj.setRequestHeader("Accept", "application/json");
+        },
+        url: url,
+        type: 'POST',
+        data: JSON.stringify(data),
+        processData: false,
+        dataType: 'json',
+        success: function(resp) {},
+        error: function(err) {}
+      });
+    }
+  </script>
+
+</body>
+
+</html>

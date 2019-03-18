@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>mobibooks - Cloud Accounting & Inventory Management Solution</title>
+
+  <!-- Favicons -->
+  <link href="images/fav.png" rel="icon">
+  <link href="images/fav.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="overlay hidden-sm hidden-md hidden-lg hidden-"></div>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 clearfix pt-10 pt-6">
+          <a href="index.html" class="clearfix pull-left"><img src="images/fav.png" class="img-responsive pull-left mobi-logo" />
+          <span class="pull-left logo-name logo-font anchor">mobibooks</span></a>
+          <i class="fa fa-bars pull-right xs-icon hidden-sm hidden-md hidden-lg hidden-" id="sidebarCollapse"></i>
+        </div>
+        <div class="col-md-9 col-lg-9 clearfix hidden-xs">
+          <ul class="list-unstyled list-inline pull-right m-0 ptb-9 head-padd">
+            <li class="plr-15">
+              <a href="index.html" class="anchor f-16">HOME</a>
+            </li>
+            <li class="plr-15">
+              <div class="dropdown">
+                <a href="#" class="anchor f-16">SOLUTIONS</a>
+                <!-- <i class="fa fa-caret-up sol-icon"></i> -->
+                <div class="dropdown-content">
+                  <a href="mobi-features.html" class="f-16">MOBIBOOKS FEATURES</a>
+                  <a href="mobi-integrations.html" class="f-16">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li class="plr-15">
+              <a href="https://www.mobibooks.in:8443/support/" class="anchor f-16">SUPPORT</a>
+            </li>
+            <li class="plr-15">
+              <a href="GSTUtilities.html" class="anchor f-16">GST UTILITIES</a>
+            </li>
+            <li class="plr-15">
+              <a href="contact.html" class="anchor f-16">CONTACT</a>
+            </li>
+            <li>
+              <!-- <a href="https://api.mobibooks.in/#!/login" target="_blank" class="anchor">login</a> -->
+              <a type="button" href="https://api.mobibooks.in/#!/login" target="_blank" class="btn btn-clr1 white-clr btn-sm signup">login</a>
+
+            </li>
+            <!-- <li>
+              <a type="button" href="https://api.mobibooks.in/#!/signup" target="_blank" class="btn btn-clr white-clr btn-sm signup">Signup for free</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- <section class="sub-header mt-55 hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled list-inline pull-left m-0 f-16">
+            <li class="">
+              <a href="index.html" class="anchor">HOME</a>
+            </li>
+            <li class="">
+              <div class="dropdown">
+                <a href="#" class="anchor">SOLUTIONS</a>
+                <div class="dropdown-content">
+                  <a href="mobi-features.html">MOBIBOOKS FEATURES</a>
+                  <a href="mobi-integrations.html">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="http://abimanyu.in" target="_blank" class="anchor">SUPPORT</a>
+            </li>
+            <li class="">
+              <a href="GSTUtilities.html" class="anchor">GST UTILITIES</a>
+            </li>
+            <li>
+              <a href="#contact" class="anchor">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- xs screen menu code -->
+  <nav id="sidebar" class="hidden-sm hidden-md hidden-lg hidden-">
+    <div id="dismiss">
+      <i class="fa fa-close"></i>
+    </div>
+
+    <div class="sidebar-header">
+      <h3>MENU</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="">
+        <a data-toggle="collapse" href="#collapse1">SOLUTIONS</a>
+        <div id="collapse1" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item coll-sub">
+              <a href="mobi-features.html">MOBIBOOKS FEATURES</a>
+            </li>
+            <li class="list-group-item coll-sub">
+              <a href="mobi-integrations.html">MOBI BRIDGE INTEGRATIONS</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.mobibooks.in:8443/support/">SUPPORT</a>
+      </li>
+      <li class="">
+        <a href="GSTUtilities.html" class="anchor">GST UTILITIES</a>
+      </li>
+      <li>
+        <a href="contact.html">CONTACT</a>
+      </li>
+      <li>
+        <a href="https://api.mobibooks.in/#!/login" target="_blank">LOGIN</a>
+      </li>
+      <!-- <li>
+        <a href="https://api.mobibooks.in/#!/signup" target="_blank">SIGNUP FOR FREE</a>
+      </li> -->
+    </ul>
+
+  </nav>
+
+  <section class="ptb-50 mt-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">MOBI BRIDGE INTEGRATIONS</h3>
+          <h3 class="text-center head-txt mtb-20">Automation Leads to <span class="fw-400"> man-power</span> savings & no <span class="fw-400">data tampering</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-20">
+          <div class="min-h1">
+            <img src="images/icons/hospitality.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20"><a href="autoDealers.html" class="anchor clr2">Hospitality - Hotels & Restaurants</a></h4>
+          <p class="text-center">Automotive dealers use Dealer Management Systems (DMS) for majority of the operations. However dealers use a different financial systems due to specific needs.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="min-h1">
+            <img src="images/icon_thum/restaurantday.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20">Restaurant Day-End sales posting</h4>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="min-h1">
+            <img src="images/icon_thum/counter_sale.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20">Front Office Day-End sales posting</h4>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="min-h1">
+            <img src="images/icon_thum/member_billing.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20">Member billing</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="min-h1">
+            <img src="images/icon_thum/payroll.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20">Payroll</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="white-clr">
+    <div class="container ptb-50">
+      <div class="row m-0">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h3 class="foot-logo logo-font">mobibooks</h3>
+          <p class="foot-text clr1">Secure cloud based accounting and inventory management solution. Integrated desktop and mobile applications to support field operations. Server not required.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">USEFUL LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="index.html" class="anchor clr1">Home</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="solutions.html" class="anchor clr1">Solutions</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="https://www.mobibooks.in:8443/support/" class="anchor clr1">Support</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="GSTUtilities.html" class="anchor clr1">GST Utilities</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="contact.html" class="anchor clr1">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">CONTACT US</h4>
+          <p class="foot-text">
+            Kanakadurga & Viswa Sai Mandir Rd,<br> Bhavani Nagar, Banjara Hills,<br> Hyderabad - 500034,<br>
+            <strong>Phone:</strong> +91 7093644659<br>
+            <strong>Email:</strong> contact@mobigesture.com<br>
+          </p>
+          <div class="social-links ptb-15">
+            <a href="https://twitter.com/mobigesture_m" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Mobigesture/?ref=br_rs" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+          </div>
+        </div>
+        <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-newsletter">
+          <h4 class="m-0 ptb-22">OUR NEWSLETTER</h4>
+          <p class="foot-text">Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <form action="" method="post" class="ptb-15">
+            <input type="email" name="email"><input type="submit" value="Subscribe" class="bg-blue">
+          </form>
+        </div> -->
+      </div>
+    </div>
+    <div class="copyrights ptb-15">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          Copyright © 2018 <strong>mobibooks</strong> All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // scrollable data
+      var nice = $("html").niceScroll({
+        cursorcolor: "#0aa9ce",
+      }); // The document page (body)
+
+      // code for mobile screen menu
+
+      $('#dismiss, .overlay').on('click', function() {
+        $('#sidebar').removeClass('active');
+        $('.overlay').fadeOut();
+      });
+
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').addClass('active');
+        $('.overlay').fadeIn();
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+    });
+  </script>
+
+  <!-- <script type="text/javascript">
+    // script for sub header
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 100) {
+        $(".sub-header").addClass("activesubheader");
+      } else {
+        $(".sub-header").removeClass("activesubheader");
+      }
+    });
+
+
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 120) {
+        $("header").addClass("activeheader");
+        // $(".head-padd").addClass("ptb-15");
+      } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("header").removeClass("activeheader");
+        // $(".head-padd").removeClass("ptb-15");
+      }
+    });
+  </script> -->
+
+</body>
+
+</html>

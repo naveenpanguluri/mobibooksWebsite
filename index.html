@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>mobibooks - Cloud Accounting & Inventory Management Solution</title>
+
+  <!-- Favicons -->
+  <link href="images/fav.png" rel="icon">
+  <link href="images/fav.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="overlay hidden-sm hidden-md hidden-lg hidden-"></div>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 clearfix pt-10 pt-6">
+          <a href="index.html" class="clearfix pull-left"><img src="images/fav.png" class="img-responsive pull-left mobi-logo" />
+          <span class="pull-left logo-name logo-font anchor">mobibooks</span></a>
+          <i class="fa fa-bars pull-right xs-icon hidden-sm hidden-md hidden-lg hidden-" id="sidebarCollapse"></i>
+        </div>
+        <div class="col-md-9 col-lg-9 clearfix hidden-xs">
+          <ul class="list-unstyled list-inline pull-right m-0 ptb-9 head-padd">
+            <li class="plr-15">
+              <a href="index.html" class="anchor f-16">HOME</a>
+            </li>
+            <li class="plr-15">
+              <div class="dropdown">
+                <a href="#" class="anchor f-16">SOLUTIONS</a>
+                <!-- <i class="fa fa-caret-up sol-icon"></i> -->
+                <div class="dropdown-content">
+                  <a href="#mobifeatures" class="f-16">MOBIBOOKS FEATURES</a>
+                  <a href="#mobiintegrations" class="f-16">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li class="plr-15">
+              <a href="https://www.mobibooks.in:8443/support/" class="anchor f-16">SUPPORT</a>
+            </li>
+            <li class="plr-15">
+              <a href="GSTUtilities.html" class="anchor f-16">GST UTILITIES</a>
+            </li>
+            <li class="plr-15">
+              <a href="#contact" class="anchor f-16">CONTACT</a>
+            </li>
+            <li>
+              <!-- <a href="https://api.mobibooks.in/#!/login" target="_blank" class="anchor">login</a> -->
+              <a type="button" href="https://api.mobibooks.in/#!/login" target="_blank" class="btn btn-clr1 white-clr btn-sm signup">login</a>
+
+            </li>
+            <!-- <li>
+              <a type="button" href="https://api.mobibooks.in/#!/signup" target="_blank" class="btn btn-clr white-clr btn-sm signup">Signup for free</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- <section class="sub-header mt-55 hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled list-inline pull-left m-0 f-16">
+            <li class="">
+              <a href="index.html" class="anchor">HOME</a>
+            </li>
+            <li class="">
+              <div class="dropdown">
+                <a href="#" class="anchor">SOLUTIONS</a>
+                <div class="dropdown-content">
+                  <a href="#mobifeatures">MOBIBOOKS FEATURES</a>
+                  <a href="#mobiintegrations">MOBI BRIDGE INTEGRATIONS</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/support/" target="_blank" class="anchor">SUPPORT</a>
+            </li>
+            <li class="">
+              <a href="GSTUtilities.html" class="anchor">GST UTILITIES</a>
+            </li>
+            <li>
+              <a href="#contact" class="anchor">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- xs screen menu code -->
+  <nav id="sidebar" class="hidden-sm hidden-md hidden-lg hidden-">
+    <div id="dismiss">
+      <i class="fa fa-close"></i>
+    </div>
+
+    <div class="sidebar-header">
+      <h3>MENU</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="index.html">HOME</a>
+      </li>
+      <li class="">
+        <a data-toggle="collapse" href="#collapse1">SOLUTIONS</a>
+        <div id="collapse1" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item coll-sub">
+              <a href="mobi-features.html">MOBIBOOKS FEATURES</a>
+            </li>
+            <li class="list-group-item coll-sub">
+              <a href="mobi-integrations.html">MOBI BRIDGE INTEGRATIONS</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.mobibooks.in:8443/support/">SUPPORT</a>
+      </li>
+      <li class="">
+        <a href="GSTUtilities.html">GST UTILITIES</a>
+      </li>
+      <li>
+        <a href="contact.html">CONTACT</a>
+      </li>
+      <li>
+        <a href="https://api.mobibooks.in/#!/login" target="_blank">LOGIN</a>
+      </li>
+      <!-- <li>
+        <a href="https://api.mobibooks.in/#!/signup" target="_blank">SIGNUP FOR FREE</a>
+      </li> -->
+    </ul>
+
+  </nav>
+
+
+  <section class="hidden-xs mt-60">
+    <div class="container">
+
+      <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="intro-txt">
+            <h2 class="m-0 main-caption">Manage your business with confidence<br /><span class="sub-caption">Use our cloud based accounting and inventory management solution</span></h2>
+            <!-- <h2 class="main_caption">Manage your business <br/> with confidence
+            <span class="caption">Use our cloud based <br/> accounting and inventory management solution</span></h2> -->
+          </div>
+          <div class="item active clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/1.png" alt="intro1" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Ideal for <span class="fw-400">Multi-Location</span> Business</h3>
+            </div>
+          </div>
+
+          <div class="item clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/2.png" alt="intro2" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Cost Savings, <span class="fw-400">Server Not Required</span></h3>
+            </div>
+          </div>
+
+          <div class="item clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/3.png" alt="intro3" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3><span class="fw-400">Track Changes, </span> Show History</h3>
+            </div>
+          </div>
+
+          <div class="item clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/4.png" alt="intro4" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3>Open APIs to <span class="fw-400">Integrate</span> With Other Systems</h3>
+            </div>
+          </div>
+
+          <div class="item clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/5.png" alt="intro5" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3><span class="fw-400">Desktop & Mobile </span> Applications to meet Business Needs</h3>
+            </div>
+          </div>
+
+          <div class="item clearfix">
+            <div class="intro-img1">
+              <img src="images/landing-images/6.png" alt="intro6" style="width:100%;">
+            </div>
+            <div class="carousel-caption">
+              <h3><span class="fw-400">Secured & Encrypted</span> SSL Tunnels</h3>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="hei1 mt-60 hidden-sm hidden-md hidden-lg">
+    <!-- <div class="contaner">
+      <div class="row m-0">
+        <div class="col-xs-12"> -->
+    <div class="xs-main-txt">
+      <h1 class="main-caption-xs text-center">Manage your business with confidence<br /><span class="sub-caption-xs">using our cloud based accounting and inventory management solution</span></h1>
+    </div>
+
+    <div id="myCarousel-xs" class="carousel carousel-fade" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel-xs" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel-xs" data-slide-to="1"></li>
+        <li data-target="#myCarousel-xs" data-slide-to="2"></li>
+        <li data-target="#myCarousel-xs" data-slide-to="3"></li>
+        <li data-target="#myCarousel-xs" data-slide-to="4"></li>
+        <li data-target="#myCarousel-xs" data-slide-to="5"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/1.png" alt="intro1" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3>Ideal for <span class="fw-400">Multi-Location</span> Business</h3>
+          </div>
+        </div>
+
+        <div class="item clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/2.png" alt="intro2" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3>Cost Savings <span class="fw-400">Server Not Required</span></h3>
+          </div>
+        </div>
+
+        <div class="item clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/3.png" alt="intro3" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3><span class="fw-400">Track Changes</span> Show History</h3>
+          </div>
+        </div>
+
+        <div class="item clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/4.png" alt="intro4" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3>Open APIs to <span class="fw-400">Integrate</span> With Other Systems</h3>
+          </div>
+        </div>
+
+        <div class="item clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/5.png" alt="intro5" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3><span class="fw-400">Desktop App</span> for Offices <br /><span class="fw-400">Mobile Apps</span> for Field</h3>
+          </div>
+        </div>
+
+        <div class="item clearfix">
+          <div class="intro-img1-xs">
+            <img src="images/intro-carousel/6.png" alt="intro6" style="width:100%;">
+          </div>
+          <div class="carousel-caption-xs">
+            <h3><span class="fw-400">Secured & Encrypted</span> SSL Tunnels</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+
+    </div>
+
+
+    <!-- </div>
+      </div>
+    </div> -->
+  </section>
+
+  <section class="ptb-50 bg-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">FINANCIAL ACCOUNTING & INVENTORY MANAGEMENT SOLUTION</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="xs-img1 mtb-20">
+            <img src="images/mb-flow.png" class="img-responsive" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <p class="main-txt">
+            Mobibooks solution includes a web portal, desktop and mobile applications. Solution works seamlessly due to centralized database on cloud. Each component of the solution addresses certain business needs. For instance, Top Management views dashboards and
+            financial statements through web portal anywhere and at any time. Data is synchronized in real time, hence financial statements and dashboards are generated in real time. Accountants and or HR Managers administer user maintenance, company
+            & location maintenance through web portal. Due to cloud and role based privileges, multiple users including auditors have access to the same version of the solution.
+          </p>
+          <p class="main-txt">
+            Accountants and or Store In-Charge set up accounts, post vouchers and generate reports through desktop application. Remote Cashiers or Field Executives use MobiField application to collect monies from the customer location. Systematically transactions
+            are posted to daybooks within desktop application. Sales Agents capture customer and invoice data via MobiInvoice application. Invoice data is posted to applicable accounts within desktop application. Accounting staff reviews and prints invoices
+            upon receipt of monies from customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ptb-50" id="mobifeatures">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">MOBIBOOKS FEATURES</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/financial_accounting.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Desktop Financial Accounting</h4>
+          <p class="text-center mb-40">Manage chart of Accounts, Party Accounts, Vouchers and view financial reports.</p>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/inventory_management.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Desktop Inventory Management</h4>
+          <p class="text-center">Handle inventory receipts, issues, transfers and adjustments balances. Both accounts are inventory are integrated.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/data_security.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Data Security & Access Controls</h4>
+          <p class="text-center">Your data is secured at every level right from transmission through user access. Used SSL tunnels to prevent leakages during data transmission.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/location_support.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Multi-Location support</h4>
+          <p class="text-center">Location specific user access permissions, Ledger access rights and reports.</p>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/change_history.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Change History</h4>
+          <p class="text-center">Complete history of changes in mobibooks is recorded. Power users can retrieve or purge change history.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/mobi_dashapp.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">MobiDash App - Instant Access to Data</h4>
+          <p class="text-center">Using MobiDash app, Access your reports, ledgers, vouchers along with attachment and voice narrations from your smart phone.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/mobi_fieldapp.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">MobiField App – Field Ops</h4>
+          <p class="text-center">Using MobiField app, Handle receipts, payments, deposits and transfers using mobile phone. Attach signatures, take pictures and voice narrations to the vouchers.</p>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/ease_invoicing.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Ease of Invoicing</h4>
+          <p class="text-center">Using MobiInvoice app, Raise invoices from your smartphone / pad.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 min-h2">
+          <div class="min-h1">
+            <img src="images/icons/open_api.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20">Open API Support</h4>
+          <p class="text-center">Easily integrate mobibooks with other third party applications such as payroll, dealer management systems, POS terminals, etc..</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ptb-50 bg-grey" id="mobiintegrations">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">MOBI BRIDGE INTEGRATIONS</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-20">
+          <div class="min-h1">
+            <img src="images/icons/auto_dealers.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center mtb-20"><a href="autoDealers.html" class="anchor clr2">Auto Dealers</a></h4>
+          <p class="text-center">Automotive dealers use Dealer Management Systems (DMS) for majority of the operations...</p>
+          <p class="text-center">
+            <a href="autoDealers.html" class="anchor clr3">Know more<i class="fa fa-angle-double-right ml-10"></i></a>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-20">
+          <div class="min-h1">
+            <img src="images/icons/wholesale_dealers.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20"><a href="wholesaleDealer.html" class="anchor clr2">Wholesale Dealers & Chain Stores</a></h4>
+          <p class="text-center">Wholesale dealers and chain stores generally deal with traded goods only...</p>
+          <p class="text-center">
+            <a href="wholesaleDealer.html" class="anchor clr3">Know more<i class="fa fa-angle-double-right ml-10"></i></a>
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-20">
+          <div class="min-h1">
+            <img src="images/icons/hospitality.png" class="img-responsive mtb-auto" />
+          </div>
+          <h4 class="text-center clr2 mtb-20"><a href="hospitality.html" class="anchor clr2">Hospitality - Hotels & Restaurants</a></h4>
+          <p class="text-center">Hospitality segment uses Hotel Management Systems or POS terminals to manage...</p>
+          <p class="text-center">
+            <a href="hospitality.html" class="anchor clr3">Know more<i class="fa fa-angle-double-right ml-10"></i></a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <section class="ptb-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">PRICING</h3>
+          <h4 class="text-center mb-35">All plans are free for first 30 days, no credit card required.</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="pricing-box bg-grey1 text-center white-clr">
+            <p class="p-head ptb-9 m-0">Basic</p>
+            <p class="ptb-9 m-0 bg-blue">SINGLE OWNER Businesses</p>
+            <p class="ptb-9 m-0">₹ 249</p>
+            <p class="ptb-9 m-0">Monthly</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0">SINGLE USER</p>
+            <p class="ptb-9 m-0">SINGLE LOCATION</p>
+            <p class="bottom-btn"><button type="button" class="btn btn-default gutter-top-bottm">SIGN UP</button></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="pricing-box bg-grey2 text-center white-clr">
+            <p class="p-head ptb-9 m-0">Standard</p>
+            <p class="ptb-9 m-0 bg-blue">Multi-LOCATION Businesses</p>
+            <p class="ptb-9 m-0">₹ 499</p>
+            <p class="ptb-9 m-0">Monthly for each location</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0">UNLIMITED USERS</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="bottom-btn"><button type="button" class="btn btn-default gutter-top-bottm">SIGN UP</button></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="pricing-box bg-grey3 text-center white-clr">
+            <p class="p-head ptb-9 m-0">Premium</p>
+            <p class="ptb-9 m-0 bg-blue">HAS FIELD Operations</p>
+            <p class="ptb-9 m-0">₹ 1,999</p>
+            <p class="ptb-9 m-0">Monthly for each location</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0">UNLIMITED USERS</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i>5 GB</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="bottom-btn"><button type="button" class="btn btn-default gutter-top-bottm">SIGN UP</button></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="pricing-box bg-blue1 text-center white-clr">
+            <p class="p-head ptb-9 m-0">Integrations</p>
+            <p class="ptb-9 m-0 bg-blue">Let’s Talk</p>
+            <p class="ptb-9 m-0">₹ 249</p>
+            <p class="ptb-9 m-0">Monthly</p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0"><i class="fa fa-check" aria-hidden="true"></i></p>
+            <p class="ptb-9 m-0">SINGLE USER</p>
+            <p class="ptb-9 m-0">SINGLE LOCATION</p>
+            <p class="bottom-btn"><button type="button" class="btn btn-default gutter-top-bottm">SIGN UP</button></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <section class="ptb-50" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 class="text-center head-txt mtb-20">CONTACT US</h3>
+          <h4 class="text-center">We know you have something great and we'd love to get involved.</h4>
+        </div>
+      </div>
+      <div class="row ptb-50">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="add1">
+            <!-- <h3 class="text-center head-txt mtb-20">Main Branch</h3> -->
+            <h4 class="text-center mtb-20">Hyderabad</h4>
+            <!-- <p class="text-center">
+              Kanakadurga & Viswa Sai Mandir Rd,<br> Bhavani Nagar, Banjara Hills,<br> Hyderabad - 500034,<br> +91 7093644659<br> contact@mobigesture.com
+              <br>
+            </p> -->
+            <p class="text-center">
+              8-2-684/111/5 Plot No.5,<br /> Road No.12, Banjara Hills,<br /> Hyderabad, India - 500034,<br />+91 7093644659,<br />contact@mobigesture.com
+            </p>
+            <div class="ic">
+              <a href="https://www.google.co.in/maps/place/Mobigesture+Software+Pvt.+Ltd/@17.4145852,78.4279257,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9728221ab351:0x6f2e823e724a4b9!8m2!3d17.4145852!4d78.4301144?hl=en" target="_blank"><img src="images/map-location.png" class="img-responsive"/></a>
+            </div>
+            <!-- <a href="https://www.google.co.in/maps/place/Mobigesture+Software+Pvt.+Ltd/@17.4145852,78.4279257,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9728221ab351:0x6f2e823e724a4b9!8m2!3d17.4145852!4d78.4301144?hl=en" target="_blank"><img src="images/map-location.png" class="img-responsive"/></a> -->
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="add2">
+            <!-- <h3 class="text-center head-txt mtb-20">Sub Branch</h3> -->
+            <h4 class="text-center mtb-20">Vishakapatnam</h4>
+            <!-- <p class="text-center">
+              Balayya Sastri Layout,<br> Seethammadara,<br> Vishakapatnam - 530013,<br> 08912504060<br> contact@mobigesture.com
+              <br>
+            </p> -->
+            <p class="text-center">
+              49-54-13/6, Balayya Sastri Layout,<br /> Seethammadara,<br />Vishakapatnam - 530013,<br />+91 7093644659,<br />contact@mobigesture.com
+            </p>
+            <div class="ic">
+              <a href="https://goo.gl/maps/hyNJyoT7aY12" target="_blank"><img src="images/map-location.png" class="img-responsive"/></a>
+            </div>
+            <!-- <a class="ic" href="https://goo.gl/maps/hyNJyoT7aY12" target="_blank"><img src="images/map-location.png" class="img-responsive"/></a> -->
+
+          </div>
+
+        </div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg inpt-box" placeholder="Name">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg inpt-box" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg inpt-box" placeholder="Phone">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg inpt-box" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group">
+              <textarea class="form-control inpt-box" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <button class="btn cnct-btn white-clr btn-lg">Send Message</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- <section style="position:relative;" class="hidden-xs" id="contact">
+    <iframe frameborder="0" style="border:0;width:100vw;height:800px;position:relative;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUbMaIiiXyzsRuaQk5yPo8gY&key=AIzaSyCU5W3MnXeOou4Fq4AFvSgOOPdkMAsbm0Y" allowfullscreen></iframe>
+    <div class="cnct-box">
+      <h2 class="m-0 fw-100">Contact Us</h2>
+      <h4 class="text-left fw-100 m-0 ptb-15">We know you have something great and we'd love to get involved.</h4>
+      <div class="form-group">
+        <input type="text" class="form-control inpt-box" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control inpt-box" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control inpt-box" placeholder="Phone">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control inpt-box" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control inpt-box" rows="5" placeholder="Message"></textarea>
+      </div>
+      <button class="btn cnct-btn white-clr">Send Message</button>
+      <h2 class="fw-100">Get in touch with us,</h2>
+      <p>
+        Phone: +91 7093644659
+      </p>
+      <p>
+        Email: contact@mobigesture.com
+      </p>
+    </div>
+  </section> -->
+
+
+  <footer class="white-clr">
+    <div class="container ptb-50">
+      <div class="row m-0">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h3 class="foot-logo logo-font">mobibooks</h3>
+          <p class="foot-text clr1">Secure cloud based accounting and inventory management solution. Integrated desktop and mobile applications to support field operations. Server not required.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">USEFUL LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="index.html" class="anchor clr1">Home</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="#mobifeatures" class="anchor clr1">Solutions</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="https://www.mobibooks.in:8443/support/" class="anchor clr1">Support</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="GSTUtilities.html" class="anchor clr1">GST Utilities</a></li>
+            <li class="ptb-9 bor-bott"><i class="fa fa-chevron-right foot-icon"></i> <a href="#contact" class="anchor clr1">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <h4 class="m-0 ptb-22">CONTACT US</h4>
+          <p class="foot-text">
+            Kanakadurga & Viswa Sai Mandir Rd,<br> Bhavani Nagar, Banjara Hills,<br> Hyderabad - 500034,<br>
+            <strong>Phone:</strong> +91 7093644659<br>
+            <strong>Email:</strong> contact@mobigesture.com<br>
+          </p>
+          <div class="social-links ptb-15">
+            <a href="https://twitter.com/mobigesture_m" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Mobigesture/?ref=br_rs" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+          </div>
+        </div>
+        <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-newsletter">
+          <h4 class="m-0 ptb-22">OUR NEWSLETTER</h4>
+          <p class="foot-text">Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <form action="" method="post" class="ptb-15">
+            <input type="email" name="email"><input type="submit" value="Subscribe" class="bg-blue">
+          </form>
+        </div> -->
+      </div>
+    </div>
+    <div class="copyrights ptb-15">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            Copyright © 2018 <strong>mobibooks</strong> All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // scrollable data
+      var nice = $("html").niceScroll({
+        cursorcolor: "#0aa9ce",
+      }); // The document page (body)
+
+      $('.carousel').carousel({
+        interval: 4000
+      });
+
+      // code for mobile screen menu
+
+      $('#dismiss, .overlay').on('click', function() {
+        $('#sidebar').removeClass('active');
+        $('.overlay').fadeOut();
+      });
+
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').addClass('active');
+        $('.overlay').fadeIn();
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+    });
+  </script>
+
+  <!-- <script type="text/javascript">
+    // script for sub header
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 200) {
+        $(".sub-header").addClass("activesubheader");
+      } else {
+        $(".sub-header").removeClass("activesubheader");
+      }
+    });
+
+
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > 120) {
+        $("header").addClass("activeheader");
+        // $(".head-padd").addClass("ptb-15");
+      } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("header").removeClass("activeheader");
+        // $(".head-padd").removeClass("ptb-15");
+      }
+    });
+  </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@media only screen and (max-width: 1200px) {
+  .intro-img1 {
+    width: 440px;
+    height: 512px;
+  }
+  .intro-txt {
+    width: 480px;
+  }
+  .main-caption {
+    font-size: 50px;
+  }
+  .carousel-caption {
+    width: 460px;
+  }
+  .ic {
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .intro-img1 {
+    width: 350px;
+    height: 400px;
+  }
+  .intro-txt {
+    width: 370px;
+  }
+  .main-caption {
+    font-size: 38px;
+  }
+  .sub-caption {
+    font-size: 22px;
+    line-height: 32px !important;
+    padding: 16px 0;
+  }
+  .carousel-caption {
+    width: 350px;
+    height: 180px;
+  }
+  .pricing-box {
+    margin-bottom: 10px;
+  }
+  .ic {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 240px;
+  }
+  .add1 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 100px 35px;
+  }
+  .add2 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 100px 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  .pricing-box {
+    width: 300px;
+    margin: 0 auto 10px;
+  }
+  .xs-img1 {
+    width: 440px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .min-h2 {
+    min-height: 255px;
+  }
+  .xs-main-txt {
+    width: 410px;
+  }
+  .main-caption-xs {
+    font-size: 42px;
+  }
+  .pt-10 {
+    padding-top: 10px;
+  }
+  .gst-form {
+    width: 100%;
+  }
+  .add1 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .xs-img1 {
+    width: 290px;
+  }
+  .xs-main-txt {
+    width: 360px;
+  }
+  .main-caption-xs {
+    font-size: 36px;
+  }
+  .sub-caption-xs {
+    font-size: 24px;
+  }
+  .head-txt {
+    font-size: 22px;
+  }
+  .contact-phone {
+    border: 0;
+  }
+  .ptb-50 {
+    padding: 50px 0;
+  }
+  .gst-form {
+    width: 100%;
+  }
+  .ic {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 240px;
+  }
+  .add1 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 80px 35px;
+    margin-bottom: 15px;
+  }
+  .add2 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 100px 35px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #myCarousel-xs {
+    height: 250px;
+  }
+  .xs-main-txt {
+    top: 90px;
+  }
+  .gst-form {
+    width: 100%;
+  }
+  .ic {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 240px;
+  }
+  .add1 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 80px 35px;
+    margin-bottom: 15px;
+  }
+  .add2 {
+    box-shadow: 0 0 2px #ccc;
+    padding: 35px 35px 100px 35px;
+  }
+}
